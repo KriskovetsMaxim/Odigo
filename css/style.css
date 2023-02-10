@@ -1,0 +1,510 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+body {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.wrapper {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper-big {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    position: relative;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background: #006DFE;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* ----------HEADER STYLE START-------------- */
+
+.header{
+    padding-top: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    margin-right: 82px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__item-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* ----------HEADER STYLE END-------------- */
+
+/* -------SECTION INTRO STYLE START------- */
+
+.intro {
+    min-height: 130vh;
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 255px;
+}
+
+.intro__title {
+    max-width: 620px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color:#ffffff;
+    margin-bottom: 22px;
+}
+
+.intro__text {
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.search-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.search-form__field {
+    max-width: 297px;
+    background: transparent url(../img/circle.svg) no-repeat left 3px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    font-weight: 500;
+    font-size: 18px;
+    color:#ffffff;
+    margin-right: 60px;
+    padding-bottom: 22px;
+    padding-left: 43px;
+}
+
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.search-form__submit {
+    background: #1B7DFF;
+    padding: 15px 40px;
+    border: 0;
+    color:#ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.search-form__submit:hover,.search-form__submit:active,.search-form__submit:focus {
+    background: #1668d3;
+}
+/* -------SECTION INTRO STYLE END------- */
+
+/* -------SECTION BENEFITS STYLE START------- */
+
+.benefits {
+    position: relative;
+    padding: 0 100px 112px 100px;
+    background: #ffffff;
+    margin-bottom: 130px;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
+
+.benefits__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-99%);
+    width: 100%;
+    background: #ffffff;
+    padding: 93px 100px 120px 100px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.benefits__box-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 55px;
+}
+
+.benefits__card {
+    grid-column: span 1;
+}
+
+.benefits__card-pic {
+    margin-bottom: 37px;
+}
+
+.benefits__card-icon {
+    max-width: 66px;
+}
+
+.benefits__card-title {
+    margin-bottom: 26px;
+}
+
+.benefits__card-desc {
+    margin-bottom: 39px;
+}
+
+.benefits__card-more {
+    background: url(../img/arrow-right.svg) no-repeat 95% center;
+    color: #006DFE;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 59px;
+}
+
+.benefits__card-more:hover, .benefits__card-more:focus {
+    background: url(../img/arrow-right.svg) no-repeat right center;
+}
+/* -------SECTION BENEFITS STYLE END------- */
+
+
+/* -------SECTION PLACES STYLE START------- */
+
+.places {
+    margin-bottom: 131px;
+}
+
+.places__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 36px;
+}
+
+
+.places__view-all {
+    color: #006DFE;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url(../img/arrow-right.svg) no-repeat right center;
+    padding-right: 59px;
+}
+
+.places__view-all:hover, .places__view-all:focus {
+    opacity: .65;
+}
+
+.places__cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.places__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places__card:hover .places__card-img {
+    transform: scale(1.05);
+}
+
+.places__card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(21, 24, 36, 0.4);
+    z-index: 1;
+}
+
+.places__card_size-lg {
+    grid-column: span 3;
+}
+
+.places__card_size-sm {
+    grid-column: span 2;
+}
+
+.places__card-img {
+    width: 100%;
+    transition: 0.60s all;
+}
+
+.places__card-img_size-lg {
+    height: 354px;
+    object-fit: cover;
+}
+
+.places__card-img_size-sm {
+    height: 283px;
+    object-fit: cover;
+}
+
+.places__card-title {
+    position: absolute;
+    z-index: 2;
+    left: 29px;
+    bottom: 27px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff
+}
+
+.places__card-link {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------SECTION PLACES STYLE END------- */
+
+/* -------TOURS STYLE START------- */
+
+
+/* -------TOURS-PREFECTURE START------- */
+.tours {
+    margin-bottom: 139px;
+}
+
+.tours__prefecture {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 47px;
+    margin-bottom: 77px;
+}
+
+.tours__prefecture-img {
+    height: 354px;
+    width: 597px;
+    object-fit: cover;
+}
+
+.tours__prefecture-info {
+    padding-top: 26px;
+}
+
+.tours__prefecture-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+
+}
+
+.tours__prefecture-desc {
+    max-width: 490px;
+    margin-bottom: 58px;
+}
+
+.tours__view-prefeture {
+    color: #006DFE;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url(../img/arrow-right.svg) no-repeat 95% center;
+    padding-right: 59px;
+}
+
+.tours__view-prefeture:hover, .tours__view-prefeture:focus {
+    background: url(../img/arrow-right.svg) no-repeat right center;
+}
+/* -------TOURS-PREFECTURE END------- */
+
+/* -------TOURS-NEIGHBORHOOD START------- */
+
+.tours__neighborhood {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 47px;
+}
+
+.tours__neighborhood-img {
+    height: 354px;
+    width: 597px;
+    object-fit: cover;
+}
+
+.tours__neighborhood-info {
+    padding-top: 26px;
+}
+
+.tours__neighborhood-title {
+    max-width: 395px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+
+}
+
+.tours__neighborhood-desc {
+    max-width: 490px;
+    margin-bottom: 58px;
+}
+
+.tours__view-neighborhood {
+    color: #006DFE;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url(../img/arrow-right.svg) no-repeat 95% center;
+    padding-right: 59px;
+}
+
+.tours__view-neighborhood:hover,
+.tours__view-neighborhood:focus {
+    background: url(../img/arrow-right.svg) no-repeat right center;
+}
+/* -------TOURS-NEIGHBORHOOD END------- */
+/* -------TOURS STYLE END------- */
+
+/* -------TOP STYLE START------- */
+
+.top {
+    margin-bottom: 144px;
+}
+
+.top__title {
+    margin-bottom: 55px;
+}
+
+.top__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 57px;
+    row-gap: 58px;
+}
+
+.top__card {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.top__card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.top__card-thumb {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.top__card-stat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 25px;
+    background: rgba(21, 24, 36, 0.6);
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.top__card-title {
+    margin: 0 auto 0 0;
+    text-transform:uppercase;
+    font-size: 18px;
+}
+
+.top__card-likes {
+    margin-right: 14px;
+    padding-right: 20px;
+    background: url(../img/heart.svg) no-repeat right;
+}
+
+.top__card-comments {
+    padding-right: 23px;
+    background: url(../img/comments.svg) no-repeat right;
+}
+
+.top__card-desc {
+    margin-bottom: 31px;
+    max-width: 378px;
+}
+
+.top__card-more {
+    display: inline-block;
+    width: 118px;
+    margin: auto 0 0 0;
+    line-height: 19px;
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 19px;
+    background: #006DFE;
+}
+
+.top__card-more:hover, .top__card-more:focus {
+    background: #0058cc;
+}
